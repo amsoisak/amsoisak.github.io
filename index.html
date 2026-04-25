@@ -40,13 +40,11 @@
       content: '';
       position: fixed;
       inset: 0;
-      background-image: radial-gradient(circle, rgba(180,140,110,0.15) 1px, transparent 1px);
+      background-image: radial-gradient(circle, rgba(147,183,190,0.08) 1px, transparent 1px);
       background-size: 28px 28px;
       pointer-events: none;
       z-index: 0;
     }
-
-    /* NAV */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -55,29 +53,15 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.1rem 3rem;
-      background: rgba(253,248,243,0.9);
+      background: rgba(45,48,71,0.92);
       backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-logo {
-      font-family: 'Lora', serif;
-      font-weight: 600;
-      font-size: 1.15rem;
-      color: var(--text);
-      text-decoration: none;
-    }
+    .nav-logo { font-family: 'Lora', serif; font-weight: 600; font-size: 1.15rem; color: #ffd5c2; text-decoration: none; }
     .nav-logo span { color: var(--rose); }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .nav-links a { font-size: 0.88rem; font-weight: 500; color: #93b7be; text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--rose); }
-
-    /* HERO */
     .hero {
       position: relative;
       z-index: 1;
@@ -89,229 +73,80 @@
       max-width: 860px;
       overflow: hidden;
     }
-    .blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(70px);
-      pointer-events: none;
-      z-index: -1;
-      opacity: 0.6;
-    }
-    .blob-1 { width: 420px; height: 420px; background: #f5d4c8; top: 8%; right: -60px; }
-    .blob-2 { width: 280px; height: 280px; background: #d4e8de; bottom: 12%; right: 100px; }
-    .hero-eyebrow {
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--rose);
-      margin-bottom: 1.4rem;
-    }
-    h1 {
-      font-family: 'Lora', serif;
-      font-weight: 600;
-      font-size: clamp(2.8rem, 7vw, 5.2rem);
-      line-height: 1.15;
-      margin-bottom: 1.5rem;
-      color: var(--text);
-    }
-    h1 { color: #ffffff; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; z-index: -1; opacity: 0.25; }
+    .blob-1 { width: 420px; height: 420px; background: #f28f3b; top: 8%; right: -60px; }
+    .blob-2 { width: 280px; height: 280px; background: #588b8b; bottom: 12%; right: 100px; }
+    .hero-eyebrow { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); margin-bottom: 1.4rem; }
+    h1 { font-family: 'Lora', serif; font-weight: 600; font-size: clamp(2.8rem, 7vw, 5.2rem); line-height: 1.15; margin-bottom: 1.5rem; color: #ffd5c2; }
     h1 em { font-style: italic; color: var(--rose); }
     h1 .soft-word { color: var(--soft); }
-    .hero-desc {
-      font-size: 1.05rem;
-      color: #ffffff;
-      max-width: 480px;
-      margin-bottom: 2.5rem;
-      font-weight: 300;
-      line-height: 1.9;
-    }
+    .hero-desc { font-size: 1.05rem; color: #ffffff; max-width: 480px; margin-bottom: 2.5rem; font-weight: 300; line-height: 1.9; }
     .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn-rose {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.8rem;
-      background: var(--rose);
-      color: #fff;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.75rem 1.8rem; background: var(--rose); color: #fff;
+      font-family: 'Nunito', sans-serif; font-weight: 600; font-size: 0.9rem;
+      border: none; border-radius: 100px; cursor: pointer; text-decoration: none;
       transition: background 0.2s, transform 0.15s;
     }
-    .btn-rose:hover { background: #c8706a; transform: translateY(-2px); }
+    .btn-rose:hover { background: #d97c2a; transform: translateY(-2px); }
     .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.8rem;
-      background: transparent;
-      color: #ffd5c2;
-      font-size: 0.9rem;
-      font-weight: 500;
-      border: 1.5px solid #ffd5c2;
-      border-radius: 100px;
-      text-decoration: none;
-      transition: border-color 0.2s, color 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.75rem 1.8rem; background: transparent; color: #ffd5c2;
+      font-size: 0.9rem; font-weight: 500; border: 1.5px solid #ffd5c2;
+      border-radius: 100px; text-decoration: none; transition: border-color 0.2s, color 0.2s;
     }
     .btn-outline:hover { border-color: var(--soft); color: var(--rose); }
-    .scroll-hint {
-      position: absolute;
-      bottom: 2.5rem;
-      left: 3rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-    }
-    .scroll-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #ffffff;
-      animation: bdrop 1.6s ease-in-out infinite;
-    }
+    .scroll-hint { position: absolute; bottom: 2.5rem; left: 3rem; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .scroll-dot { width: 6px; height: 6px; border-radius: 50%; background: #ffd5c2; animation: bdrop 1.6s ease-in-out infinite; }
     .scroll-dot:nth-child(2) { animation-delay: 0.2s; opacity: 0.6; }
     .scroll-dot:nth-child(3) { animation-delay: 0.4s; opacity: 0.3; }
-    @keyframes bdrop {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(6px); }
-    }
-
-    /* SECTIONS */
-    section {
-      position: relative;
-      z-index: 1;
-      padding: 6rem 3rem;
-      max-width: 1080px;
-      margin: 0 auto;
-    }
-    .section-eyebrow {
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #ffd5c2;
-      margin-bottom: 0.75rem;
-    }
-    .section-title {
-      font-family: 'Lora', serif;
-      font-weight: 600;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      color: #93b7be;
-      margin-bottom: 0.75rem;
-    }
-    .section-sub {
-      color: #ffffff;
-      font-size: 1rem;
-      font-weight: 300;
-      max-width: 460px;
-      margin-bottom: 3rem;
-    }
+    @keyframes bdrop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+    section { position: relative; z-index: 1; padding: 6rem 3rem; max-width: 1080px; margin: 0 auto; }
+    .section-eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #ffd5c2; margin-bottom: 0.75rem; }
+    .section-title { font-family: 'Lora', serif; font-weight: 600; font-size: clamp(1.8rem, 4vw, 2.6rem); color: #93b7be; margin-bottom: 0.75rem; }
+    .section-sub { color: #ffffff; font-size: 1rem; font-weight: 300; max-width: 460px; margin-bottom: 3rem; }
     .divider { height: 1px; background: var(--border); max-width: 1080px; margin: 0 auto; position: relative; z-index: 1; }
-
-    /* PROJECT CARDS */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.25rem;
-    }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
     .project-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 2rem 2rem 1.75rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+      padding: 2rem 2rem 1.75rem; display: flex; flex-direction: column; gap: 0.85rem;
       transition: transform 0.25s, box-shadow 0.25s;
     }
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(180,140,110,0.12);
-    }
+    .project-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.2); }
     .card-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .card-icon {
-      width: 50px; height: 50px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-    }
-    .status-pill {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 100px;
-    }
+    .card-icon { width: 50px; height: 50px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+    .status-pill { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; }
     .pill-live { background: var(--sage-bg); color: var(--sage); }
     .pill-soon { background: var(--lav-bg); color: var(--lavender); }
-    .card-title {
-      font-family: 'Lora', serif;
-      font-weight: 600;
-      font-size: 1.25rem;
-      color: var(--text);
-    }
+    .card-title { font-family: 'Lora', serif; font-weight: 600; font-size: 1.25rem; color: var(--text); }
     .card-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.8; font-weight: 300; flex: 1; }
     .card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .tag { font-size: 0.72rem; font-weight: 600; padding: 4px 12px; border-radius: 100px; background: var(--bg2); color: #ffffff; }
+    .tag { font-size: 0.72rem; font-weight: 600; padding: 4px 12px; border-radius: 100px; background: #2d3047; color: #ffffff; }
     .card-divider { height: 1px; background: var(--border); margin: 0.25rem 0; }
     .card-links { display: flex; gap: 1rem; }
     .card-link { font-size: 0.82rem; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.3rem; transition: color 0.2s; }
     .link-gh { color: var(--muted); }
     .link-gh:hover { color: var(--text); }
-
-    /* ABOUT */
     .about-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
     .about-text p { font-size: 0.97rem; color: #ffffff; font-weight: 300; line-height: 1.95; margin-bottom: 1.2rem; }
-    .about-text strong { color: var(--text); font-weight: 600; }
+    .about-text strong { color: #ffd5c2; font-weight: 600; }
     .stat-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
     .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.25rem 1.5rem; }
     .stat-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
     .stat-num { font-family: 'Lora', serif; font-size: 2rem; font-weight: 600; }
-
-    /* CONTACT */
     .contact-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 3.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
+      background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 24px;
+      padding: 3.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;
     }
     .contact-card h3 { font-family: 'Lora', serif; font-size: 1.7rem; font-weight: 600; margin-bottom: 0.4rem; color: #ffd5c2; }
-    .contact-card p { font-size: 0.95rem; color: var(--muted); font-weight: 300; }
-
-    /* FOOTER */
-    footer {
-      position: relative;
-      z-index: 1;
-      border-top: 1px solid var(--border);
-      padding: 2rem 3rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    footer p { font-size: 0.8rem; color: var(--muted); }
-    footer a { color: var(--muted); text-decoration: none; }
+    .contact-card p { font-size: 0.95rem; color: #93b7be; font-weight: 300; }
+    footer { position: relative; z-index: 1; border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    footer p { font-size: 0.8rem; color: #93b7be; }
+    footer a { color: #93b7be; text-decoration: none; }
     footer a:hover { color: var(--rose); }
-
-    /* REVEAL */
     .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .reveal.visible { opacity: 1; transform: none; }
-
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 1rem 1.5rem; }
       .nav-links { display: none; }
@@ -325,9 +160,8 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">amsoisak<span>.</span></a>
+    <a href="#" class="nav-logo">Noi<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About</a></li>
@@ -336,7 +170,6 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
   <div class="hero">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
@@ -361,7 +194,6 @@
     </div>
   </div>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <p class="section-eyebrow reveal">Featured projects</p>
     <h2 class="section-title reveal">What I've been building</h2>
@@ -412,18 +244,18 @@
         </div>
       </div>
 
-      <div class="project-card reveal" style="background:var(--lav-bg); border-color:rgba(155,143,192,0.2);">
+      <div class="project-card reveal" style="background:rgba(200,85,61,0.08); border-color:rgba(200,85,61,0.2);">
         <div class="card-top">
-          <div class="card-icon" style="background:#e8e4f5;">🌱</div>
+          <div class="card-icon" style="background:#fae8e4;">🌱</div>
           <span class="status-pill pill-soon">Coming soon</span>
         </div>
         <div class="card-title" style="color:var(--lavender);">Next project</div>
         <p class="card-desc">Something new is quietly growing. Follow along on GitHub to see what comes next.</p>
         <div class="card-tags">
-          <span class="tag" style="background:#e8e4f5;color:var(--lavender);">Cloud</span>
-          <span class="tag" style="background:#e8e4f5;color:var(--lavender);">TBD</span>
+          <span class="tag">Cloud</span>
+          <span class="tag">TBD</span>
         </div>
-        <div class="card-divider" style="background:rgba(155,143,192,0.2);"></div>
+        <div class="card-divider" style="background:rgba(200,85,61,0.2);"></div>
         <div class="card-links">
           <a class="card-link" style="color:var(--lavender);" href="https://github.com/amsoisak" target="_blank">Follow on GitHub ↗</a>
         </div>
@@ -434,7 +266,6 @@
 
   <div class="divider"></div>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="about-wrap">
       <div>
@@ -442,7 +273,8 @@
         <h2 class="section-title reveal">Who's behind the code</h2>
         <div class="about-text">
           <p class="reveal">Hi, I'm <strong>Noi</strong> — a self-taught developer with a love for building things that actually get used. From <strong>health tools</strong> to <strong>travel dashboards</strong>, I make apps that feel good to open and easy to enjoy.</p>
-          <p class="reveal">I taught myself to code because I had ideas I wanted to bring to life — and I haven't stopped since. Everything here is built with curiosity, a little creativity, and a lot of heart. 🌿</p>          <div class="reveal" style="margin-top:1.5rem;">
+          <p class="reveal">I taught myself to code because I had ideas I wanted to bring to life — and I haven't stopped since. Everything here is built with curiosity, a little creativity, and a lot of heart. 🌿</p>
+          <div class="reveal" style="margin-top:1.5rem;">
             <a href="https://github.com/amsoisak" target="_blank" class="btn-outline">Visit my GitHub ↗</a>
           </div>
         </div>
@@ -470,7 +302,6 @@
 
   <div class="divider"></div>
 
-  <!-- CONTACT -->
   <section id="contact">
     <div class="contact-card reveal">
       <div>
@@ -481,9 +312,8 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2026 amsoisak — built with care &amp; GitHub Pages</p>
+    <p>© 2026 Noi — built with care &amp; GitHub Pages</p>
     <p><a href="https://github.com/amsoisak" target="_blank">github.com/amsoisak</a></p>
   </footer>
 
